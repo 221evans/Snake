@@ -1,6 +1,7 @@
 #pragma once
 #include <raylib.h>
 #include "snake.hpp"
+#include "pickup.hpp"
 
 class Game
 {
@@ -14,6 +15,7 @@ class Game
         
     private:
         Snake snake;
+        Pickup pickup;
         int directionX = 1;
         int directionY = 0;
 };

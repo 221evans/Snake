@@ -13,6 +13,7 @@ Game::~Game()
 void Game::Draw()
 {
     snake.Draw();
+    pickup.Draw();
 }
 
 void Game::ChangeDirection(int x, int y)
