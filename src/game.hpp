@@ -10,6 +10,7 @@ class Game
         void Update();
         void Draw();
         void ChangeDirection(int x, int y);
+        void HandleInput();
         
     private:
         Snake snake;

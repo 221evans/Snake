@@ -23,6 +23,11 @@ void Game::ChangeDirection(int x, int y)
 
 void Game::Update()
 {
+    HandleInput();
+}
+
+void Game::HandleInput()
+{
     if (IsKeyPressed(KEY_RIGHT) && directionX != -1)
     {
         ChangeDirection(1, 0);
@@ -39,7 +44,7 @@ void Game::Update()
     {
         ChangeDirection(0, 1);
     }
-    
+
     snake.snakePosition.x += directionX * snake.snakeDirection.x;
     snake.snakePosition.y += directionY * snake.snakeDirection.y;
 }
